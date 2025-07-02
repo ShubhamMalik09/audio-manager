@@ -1,0 +1,81 @@
+{
+  "api": {
+    "name": "AudioManagerPlugin",
+    "slug": "audiomanagerplugin",
+    "docs": "",
+    "tags": [],
+    "methods": [
+      {
+        "name": "listAudioOutputs",
+        "signature": "() => Promise<{ devices: { id: number; type: number; productName: string; typeName: string; }[]; }>",
+        "parameters": [],
+        "returns": "Promise<{ devices: { id: number; type: number; productName: string; typeName: string; }[]; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "listaudiooutputs"
+      },
+      {
+        "name": "switchToSpeaker",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "switchtospeaker"
+      },
+      {
+        "name": "switchToEarpiece",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "switchtoearpiece"
+      },
+      {
+        "name": "startCall",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "startcall"
+      },
+      {
+        "name": "endCall",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "endcall"
+      },
+      {
+        "name": "switchCommunicationDevice",
+        "signature": "(options: { deviceId: number; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ deviceId: number; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "switchcommunicationdevice"
+      }
+    ],
+    "properties": []
+  },
+  "interfaces": [],
+  "enums": [],
+  "typeAliases": [],
+  "pluginConfigs": []
+}
