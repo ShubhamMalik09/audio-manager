@@ -16,4 +16,9 @@ export declare class AudioManagerWeb extends WebPlugin implements AudioManagerPl
     switchCommunicationDevice(_: {
         deviceId: number;
     }): Promise<void>;
+    muteMicrophone(): Promise<void>;
+    unmuteMicrophone(): Promise<void>;
+    getMicrophoneStatus(): Promise<{
+        isMicMute: boolean;
+    }>;
 }

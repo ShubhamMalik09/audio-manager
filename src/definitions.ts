@@ -6,4 +6,7 @@ export interface AudioManagerPlugin {
   startCall(): Promise<void>;
   endCall(): Promise<void>;
   switchCommunicationDevice(options: { deviceId: number }): Promise<void>;
+  muteMicrophone(): Promise<void>;
+  unmuteMicrophone(): Promise<void>;
+  getMicrophoneStatus(): Promise<{ isMicMute: boolean }>;
 }

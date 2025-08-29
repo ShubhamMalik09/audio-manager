@@ -33,6 +33,18 @@ var capacitorAudioManager = (function (exports, core) {
         async switchCommunicationDevice(_) {
             console.warn('[AudioManager] switchCommunicationDevice is not supported on web.');
         }
+        async muteMicrophone() {
+            console.warn('[AudioManager] muteMicrophone is not supported on web.');
+        }
+        async unmuteMicrophone() {
+            console.warn('[AudioManager] unmuteMicrophone is not supported on web.');
+        }
+        async getMicrophoneStatus() {
+            console.warn('[AudioManager] getMicrophoneStatus is not supported on web.');
+            return {
+                isMicMute: false,
+            };
+        }
     }
 
     // const AudioManager = registerPlugin<AudioManagerPlugin>('AudioManager', {

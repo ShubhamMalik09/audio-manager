@@ -14,4 +14,9 @@ export interface AudioManagerPlugin {
     switchCommunicationDevice(options: {
         deviceId: number;
     }): Promise<void>;
+    muteMicrophone(): Promise<void>;
+    unmuteMicrophone(): Promise<void>;
+    getMicrophoneStatus(): Promise<{
+        isMicMute: boolean;
+    }>;
 }

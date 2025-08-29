@@ -19,6 +19,9 @@ npx cap sync
 * [`startCall()`](#startcall)
 * [`endCall()`](#endcall)
 * [`switchCommunicationDevice(...)`](#switchcommunicationdevice)
+* [`muteMicrophone()`](#mutemicrophone)
+* [`unmuteMicrophone()`](#unmutemicrophone)
+* [`getMicrophoneStatus()`](#getmicrophonestatus)
 
 </docgen-index>
 
@@ -81,6 +84,35 @@ switchCommunicationDevice(options: { deviceId: number; }) => Promise<void>
 | Param         | Type                               |
 | ------------- | ---------------------------------- |
 | **`options`** | <code>{ deviceId: number; }</code> |
+
+--------------------
+
+
+### muteMicrophone()
+
+```typescript
+muteMicrophone() => Promise<void>
+```
+
+--------------------
+
+
+### unmuteMicrophone()
+
+```typescript
+unmuteMicrophone() => Promise<void>
+```
+
+--------------------
+
+
+### getMicrophoneStatus()
+
+```typescript
+getMicrophoneStatus() => Promise<{ isMicMute: boolean; }>
+```
+
+**Returns:** <code>Promise&lt;{ isMicMute: boolean; }&gt;</code>
 
 --------------------
 

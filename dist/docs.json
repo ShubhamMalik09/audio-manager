@@ -70,6 +70,36 @@
         "docs": "",
         "complexTypes": [],
         "slug": "switchcommunicationdevice"
+      },
+      {
+        "name": "muteMicrophone",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "mutemicrophone"
+      },
+      {
+        "name": "unmuteMicrophone",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "unmutemicrophone"
+      },
+      {
+        "name": "getMicrophoneStatus",
+        "signature": "() => Promise<{ isMicMute: boolean; }>",
+        "parameters": [],
+        "returns": "Promise<{ isMicMute: boolean; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getmicrophonestatus"
       }
     ],
     "properties": []

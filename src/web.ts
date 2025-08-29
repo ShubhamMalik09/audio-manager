@@ -41,5 +41,20 @@ export class AudioManagerWeb extends WebPlugin implements AudioManagerPlugin {
   async switchCommunicationDevice(_: { deviceId: number }): Promise<void> {
     console.warn('[AudioManager] switchCommunicationDevice is not supported on web.');
   }
+
+  async muteMicrophone(): Promise<void> {
+    console.warn('[AudioManager] muteMicrophone is not supported on web.');
+  }
+
+  async unmuteMicrophone(): Promise<void> {
+    console.warn('[AudioManager] unmuteMicrophone is not supported on web.');
+  }
+
+  async getMicrophoneStatus(): Promise<{ isMicMute: boolean }> {
+    console.warn('[AudioManager] getMicrophoneStatus is not supported on web.');
+    return {
+      isMicMute: false,
+    };
+  }
 }
 
