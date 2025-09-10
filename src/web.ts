@@ -56,5 +56,13 @@ export class AudioManagerWeb extends WebPlugin implements AudioManagerPlugin {
       isMicMute: false,
     };
   }
+
+  async openNotificationSettings(): Promise<void> {
+    console.warn('[AudioManager] openNotificationSettings is not supported on web.');
+  }
+
+  async showAppReviewPopup(): Promise<void> {
+    console.warn('[AudioManager] showAppReviewPopup is not supported on web.');
+  }
 }
 

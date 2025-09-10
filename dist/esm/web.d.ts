@@ -21,4 +21,6 @@ export declare class AudioManagerWeb extends WebPlugin implements AudioManagerPl
     getMicrophoneStatus(): Promise<{
         isMicMute: boolean;
     }>;
+    openNotificationSettings(): Promise<void>;
+    showAppReviewPopup(): Promise<void>;
 }

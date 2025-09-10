@@ -22,6 +22,8 @@ npx cap sync
 * [`muteMicrophone()`](#mutemicrophone)
 * [`unmuteMicrophone()`](#unmutemicrophone)
 * [`getMicrophoneStatus()`](#getmicrophonestatus)
+* [`openNotificationSettings()`](#opennotificationsettings)
+* [`showAppReviewPopup()`](#showappreviewpopup)
 
 </docgen-index>
 
@@ -113,6 +115,24 @@ getMicrophoneStatus() => Promise<{ isMicMute: boolean; }>
 ```
 
 **Returns:** <code>Promise&lt;{ isMicMute: boolean; }&gt;</code>
+
+--------------------
+
+
+### openNotificationSettings()
+
+```typescript
+openNotificationSettings() => Promise<void>
+```
+
+--------------------
+
+
+### showAppReviewPopup()
+
+```typescript
+showAppReviewPopup() => Promise<void>
+```
 
 --------------------
 

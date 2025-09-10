@@ -43,5 +43,11 @@ export class AudioManagerWeb extends WebPlugin {
             isMicMute: false,
         };
     }
+    async openNotificationSettings() {
+        console.warn('[AudioManager] openNotificationSettings is not supported on web.');
+    }
+    async showAppReviewPopup() {
+        console.warn('[AudioManager] showAppReviewPopup is not supported on web.');
+    }
 }
 //# sourceMappingURL=web.js.map

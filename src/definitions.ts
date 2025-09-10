@@ -9,4 +9,6 @@ export interface AudioManagerPlugin {
   muteMicrophone(): Promise<void>;
   unmuteMicrophone(): Promise<void>;
   getMicrophoneStatus(): Promise<{ isMicMute: boolean }>;
+  openNotificationSettings(): Promise<void>;
+  showAppReviewPopup(): Promise<void>;
 }
