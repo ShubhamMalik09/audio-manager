@@ -11,4 +11,5 @@ export interface AudioManagerPlugin {
   getMicrophoneStatus(): Promise<{ isMicMute: boolean }>;
   openNotificationSettings(): Promise<void>;
   showAppReviewPopup(): Promise<void>;
+  openPermissionSettings(): Promise<void>;
 }

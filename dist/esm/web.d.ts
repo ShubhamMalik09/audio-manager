@@ -23,4 +23,5 @@ export declare class AudioManagerWeb extends WebPlugin implements AudioManagerPl
     }>;
     openNotificationSettings(): Promise<void>;
     showAppReviewPopup(): Promise<void>;
+    openPermissionSettings(): Promise<void>;
 }

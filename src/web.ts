@@ -64,5 +64,9 @@ export class AudioManagerWeb extends WebPlugin implements AudioManagerPlugin {
   async showAppReviewPopup(): Promise<void> {
     console.warn('[AudioManager] showAppReviewPopup is not supported on web.');
   }
+
+  async openPermissionSettings(): Promise<void> {
+    console.warn('[AudioManager] openPermissionSettings is not supported on web.');
+  }
 }
 

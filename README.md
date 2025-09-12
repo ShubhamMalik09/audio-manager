@@ -24,6 +24,7 @@ npx cap sync
 * [`getMicrophoneStatus()`](#getmicrophonestatus)
 * [`openNotificationSettings()`](#opennotificationsettings)
 * [`showAppReviewPopup()`](#showappreviewpopup)
+* [`openPermissionSettings()`](#openpermissionsettings)
 
 </docgen-index>
 
@@ -132,6 +133,15 @@ openNotificationSettings() => Promise<void>
 
 ```typescript
 showAppReviewPopup() => Promise<void>
+```
+
+--------------------
+
+
+### openPermissionSettings()
+
+```typescript
+openPermissionSettings() => Promise<void>
 ```
 
 --------------------

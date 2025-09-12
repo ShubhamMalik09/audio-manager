@@ -21,4 +21,5 @@ export interface AudioManagerPlugin {
     }>;
     openNotificationSettings(): Promise<void>;
     showAppReviewPopup(): Promise<void>;
+    openPermissionSettings(): Promise<void>;
 }

@@ -120,6 +120,16 @@
         "docs": "",
         "complexTypes": [],
         "slug": "showappreviewpopup"
+      },
+      {
+        "name": "openPermissionSettings",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "openpermissionsettings"
       }
     ],
     "properties": []

@@ -14,6 +14,7 @@ import android.media.AudioAttributes;
 import android.media.AudioDeviceInfo;
 import android.media.AudioFocusRequest;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Build;
 import android.os.PowerManager;
 import android.provider.Settings;
@@ -272,6 +273,17 @@ public class AudioManagerPlugin extends Plugin implements SensorEventListener {
 
 //        audioManager.setMode(AudioManager.MODE_NORMAL);
         audioManager.setMicrophoneMute(false);
+
+        call.resolve();
+    }
+
+    @PluginMethod
+    public void openPermissionSettings(PluginCall call) {
+
+        Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        Uri uri = Uri.fromParts("package", getContext().getPackageName(), null);
+        intent.setData(uri);
+        getContext().startActivity(intent);
 
         call.resolve();
     }

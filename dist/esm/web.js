@@ -49,5 +49,8 @@ export class AudioManagerWeb extends WebPlugin {
     async showAppReviewPopup() {
         console.warn('[AudioManager] showAppReviewPopup is not supported on web.');
     }
+    async openPermissionSettings() {
+        console.warn('[AudioManager] openPermissionSettings is not supported on web.');
+    }
 }
 //# sourceMappingURL=web.js.map
