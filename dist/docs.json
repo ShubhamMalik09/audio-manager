@@ -130,6 +130,52 @@
         "docs": "",
         "complexTypes": [],
         "slug": "openpermissionsettings"
+      },
+      {
+        "name": "saveFCMToken",
+        "signature": "(options: { fcmToken: string; }) => Promise<void>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ fcmToken: string; }"
+          }
+        ],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "savefcmtoken"
+      },
+      {
+        "name": "getFCMToken",
+        "signature": "() => Promise<{ fcmToken: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ fcmToken: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getfcmtoken"
+      },
+      {
+        "name": "clearFCMToken",
+        "signature": "() => Promise<void>",
+        "parameters": [],
+        "returns": "Promise<void>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "clearfcmtoken"
+      },
+      {
+        "name": "getDeviceInfo",
+        "signature": "() => Promise<{ manufacturer: string; model: string; osVersion: string; appVersionName: string; appVersionCode: string; networkType: string; networkSpeed: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ manufacturer: string; model: string; osVersion: string; appVersionName: string; appVersionCode: string; networkType: string; networkSpeed: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getdeviceinfo"
       }
     ],
     "properties": []

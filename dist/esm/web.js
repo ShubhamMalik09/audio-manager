@@ -52,5 +52,24 @@ export class AudioManagerWeb extends WebPlugin {
     async openPermissionSettings() {
         console.warn('[AudioManager] openPermissionSettings is not supported on web.');
     }
+    async saveFCMToken(_) {
+        console.warn('[AudioManager] saveFCMToken is not supported on web.');
+    }
+    async getFCMToken() {
+        console.warn('[AudioManager] getFCMToken is not supported on web.');
+        return {
+            fcmToken: "",
+        };
+    }
+    async clearFCMToken() {
+        console.warn('[AudioManager] clearFCMToken is not supported on web.');
+    }
+    async getDeviceInfo() {
+        console.warn('[AudioManager] getDeviceInfo is not supported on web.');
+        return {
+            manufacturer: "", model: "", osVersion: "", appVersionName: "",
+            appVersionCode: "", networkType: "", networkSpeed: ""
+        };
+    }
 }
 //# sourceMappingURL=web.js.map

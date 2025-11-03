@@ -24,4 +24,20 @@ export declare class AudioManagerWeb extends WebPlugin implements AudioManagerPl
     openNotificationSettings(): Promise<void>;
     showAppReviewPopup(): Promise<void>;
     openPermissionSettings(): Promise<void>;
+    saveFCMToken(_: {
+        fcmToken: string;
+    }): Promise<void>;
+    getFCMToken(): Promise<{
+        fcmToken: string;
+    }>;
+    clearFCMToken(): Promise<void>;
+    getDeviceInfo(): Promise<{
+        manufacturer: string;
+        model: string;
+        osVersion: string;
+        appVersionName: string;
+        appVersionCode: string;
+        networkType: string;
+        networkSpeed: string;
+    }>;
 }
