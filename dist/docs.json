@@ -168,6 +168,22 @@
         "slug": "clearfcmtoken"
       },
       {
+        "name": "getNotificationPayload",
+        "signature": "(options: { fcmKey: string; }) => Promise<{ payload: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ fcmKey: string; }"
+          }
+        ],
+        "returns": "Promise<{ payload: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "getnotificationpayload"
+      },
+      {
         "name": "getDeviceInfo",
         "signature": "() => Promise<{ manufacturer: string; model: string; osVersion: string; appVersionName: string; appVersionCode: string; networkType: string; networkSpeed: string; }>",
         "parameters": [],

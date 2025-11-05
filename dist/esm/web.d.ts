@@ -31,6 +31,11 @@ export declare class AudioManagerWeb extends WebPlugin implements AudioManagerPl
         fcmToken: string;
     }>;
     clearFCMToken(): Promise<void>;
+    getNotificationPayload(_: {
+        fcmKey: string;
+    }): Promise<{
+        payload: string;
+    }>;
     getDeviceInfo(): Promise<{
         manufacturer: string;
         model: string;

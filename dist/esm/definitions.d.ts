@@ -29,6 +29,11 @@ export interface AudioManagerPlugin {
         fcmToken: string;
     }>;
     clearFCMToken(): Promise<void>;
+    getNotificationPayload(options: {
+        fcmKey: string;
+    }): Promise<{
+        payload: string;
+    }>;
     getDeviceInfo(): Promise<{
         manufacturer: string;
         model: string;

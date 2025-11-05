@@ -64,6 +64,13 @@ export class AudioManagerWeb extends WebPlugin {
     async clearFCMToken() {
         console.warn('[AudioManager] clearFCMToken is not supported on web.');
     }
+    async getNotificationPayload(_) {
+        console.warn('[AudioManager] getNotificationPayload is not supported on web.');
+        return {
+            payload: "",
+        };
+    }
+    ;
     async getDeviceInfo() {
         console.warn('[AudioManager] getDeviceInfo is not supported on web.');
         return {
